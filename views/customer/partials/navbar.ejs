@@ -1,0 +1,191 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold fs-3" href="/customer/home">
+            🛒 TechMart
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <form class="d-flex mx-auto"
+      style="width:40%;"
+      action="/customer/search"
+      method="GET">
+
+    <input
+        class="form-control"
+        type="search"
+        name="keyword"
+        placeholder="Search Products...">
+
+    <button class="btn btn-primary ms-2">
+        Search
+    </button>
+
+</form>
+
+      
+
+            <ul class="navbar-nav ms-auto">
+
+                <!-- Home -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="/customer/home">
+
+                        <i class="fa fa-home"></i>
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <!-- Cart -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="/customer/cart">
+
+                        <i class="fa fa-shopping-cart"></i>
+
+                        Cart
+
+                    </a>
+
+                </li>
+
+                <!-- Wishlist -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="/customer/wishlist">
+
+                        <i class="fa fa-heart text-danger"></i>
+
+                        Wishlist
+
+                    </a>
+
+                </li>
+
+                <!-- Orders -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="/customer/orders">
+
+                        <i class="fa fa-list"></i>
+
+                        My Orders
+
+                    </a>
+
+                </li>
+
+                <!-- Customer Dropdown -->
+
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
+
+                        <i class="fa fa-user text-primary"></i>
+
+                        <%= customer ? customer.name : "Customer" %>
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                        <li>
+
+                            <a
+                            class="dropdown-item"
+                            href="/customer/profile">
+
+                                <i class="fa fa-user"></i>
+
+                                My Profile
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                         <a class="dropdown-item" href="/customer/edit-profile">
+    Edit Profile
+</a>
+
+                        </li>
+
+                        <li>
+
+                            <a
+                            class="dropdown-item"
+                            href="/customer/cart">
+
+                                <i class="fa fa-shopping-cart"></i>
+
+                                My Cart
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a
+                            class="dropdown-item"
+                            href="/customer/wishlist">
+
+                                <i class="fa fa-heart text-danger"></i>
+
+                                Wishlist
+
+                            </a>
+
+                        </li>
+
+                        <li><hr class="dropdown-divider"></li>
+
+                        <li>
+
+                            <a
+                            class="dropdown-item text-danger"
+                            href="/customer/logout">
+
+                                <i class="fa fa-sign-out-alt"></i>
+
+                                Logout
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
