@@ -75,7 +75,7 @@ Techmart-Ecommerce/
 ## Installation and Setup
 
 ### 1. Clone the Repository
-git clone https://github.com/ravillaswathi/Techmart--Ecommerce.git
+git clone https://github.com/ravillaswathi/Techmart--Ecommerce.git 
 
 ### 2. Navigate to the Project Folder
 cd Techmart--Ecommerce
@@ -192,8 +192,3 @@ Ravilla Swathi
 
 B.Tech – Computer Science and Engineering
 
-
-
-
-```text
-Update README with setup and project documentation
