@@ -71,6 +71,8 @@ Techmart-Ecommerce/
 ├── package-lock.json
 ├── server.js
 └── .gitignore
+|__screenshots/
+
 
 ## Installation and Setup
 
